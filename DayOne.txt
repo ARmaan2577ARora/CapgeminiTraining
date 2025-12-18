@@ -1,1 +1,46 @@
 This is my first day at Capgemini training.
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder
+$ git init
+Initialized empty Git repository in C:/Users/armaa/OneDrive/Desktop/New folder/.
+git/
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git add README.me
+fatal: pathspec 'README. me' did not match any files
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ echo "# CapgeminiTraining" >> README. md
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git add README.me
+fatal: pathspec 'README. me' did not match any files
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git add README. md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git commit -m "First COMMIT"
+[main (root-commit) 0a27f27] First COMMIT
+1 file changed, 1 insertion(+)
+create mode 100644 README. md
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git branch -M main
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git remote add origin https://github.com/ARmaan2577ARora/CapgeminiTraining.git
+
+armaa@DESKTOP-1415K50 MINGW64 ~/OneDrive/Desktop/New folder (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ARmaan2577ARora/CapgeminiTraining.git
+[new branch]
+branch 'main' set up to track 'origin/main'.
+
+main -> main
