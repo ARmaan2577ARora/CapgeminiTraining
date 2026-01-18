@@ -24,14 +24,12 @@ class Employee {
 }
 
 class Manager extends Employee {
-
     String designation;
 
     Manager(int employeeID, String department, double salary, String designation) {
         super(employeeID, department, salary);
         this.designation = designation;
     }
-
     void displayDetails() {
         System.out.println(employeeID);
         System.out.println(department);
@@ -41,15 +39,11 @@ class Manager extends Employee {
 }
 
 public class EmployeeRecords {
-
     public static void main(String[] args) {
-
-        Manager manager = new Manager(1001, "IT", 75000.0, "Project Manager");
-
+        Manager manager = new Manager(101, "IT-Tech", 65000.0, "Project-Manager");
         manager.displayDetails();
 
-        manager.setSalary(85000.0);
-
+        manager.setSalary(80000.0);
         System.out.println(manager.getSalary());
     }
 }

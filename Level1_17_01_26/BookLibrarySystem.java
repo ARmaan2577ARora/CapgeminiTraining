@@ -1,7 +1,6 @@
-package Level1_16_01_26;
+package Level1_17_01_26;
 
 class LibraryItem {
-
     public String ISBN;
     protected String title;
     private String author;
@@ -22,9 +21,7 @@ class LibraryItem {
 }
 
 class EBook extends LibraryItem {
-
     String format;
-
     EBook(String ISBN, String title, String author, String format) {
         super(ISBN, title, author);
         this.format = format;
@@ -39,15 +36,11 @@ class EBook extends LibraryItem {
 }
 
 public class BookLibrarySystem {
-
     public static void main(String[] args) {
-
-        EBook book = new EBook("978-12345", "Java Programming", "James Gosling", "PDF");
-
+        EBook book = new EBook("928-17365", "Java OOPS", "James frost", "PDF");
         book.displayDetails();
 
-        book.setAuthor("Oracle");
-
+        book.setAuthor("Jimmy");
         System.out.println(book.getAuthor());
     }
 }

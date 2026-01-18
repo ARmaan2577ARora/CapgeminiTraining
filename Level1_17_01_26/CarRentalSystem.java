@@ -1,5 +1,4 @@
 package Level1_17_01_26;
-
 class Car{
     String customerName;
     String carModel;
@@ -9,7 +8,6 @@ class Car{
         this.customerName = name;
         this.carModel = model;
         this.rentalDays = days;
-
         totalCost(days);
     }
 
@@ -17,12 +15,11 @@ class Car{
         double costPerDay = 1000;
         double cost = costPerDay * days ;
         System.out.println(cost);
-
     }
 }
 public class CarRentalSystem {
     public static void main(String[] args) {
-        Car c1 = new Car("Khushi","hero",5);
-
+        Car c1 = new Car("Armaan","Wagon-R",7);
+        System.out.println(c1.carModel+" "+c1.customerName+" "+c1.rentalDays);
     }
 }

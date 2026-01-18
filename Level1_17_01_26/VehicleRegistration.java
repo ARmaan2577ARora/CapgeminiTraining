@@ -3,7 +3,6 @@ package Level1_17_01_26;
 class Vehicle{
     String ownerName;
     String vehicleType;
-
     static int registrationFee = 500;
 
     Vehicle(String name,String type){
@@ -21,11 +20,10 @@ class Vehicle{
 }
 public class VehicleRegistration {
     public static void main(String[] args) {
-        Vehicle v1 = new Vehicle("khushi","hero");
+        Vehicle v1 = new Vehicle("Armaan","Nano");
 
         v1.displayVehicleDetails();
         Vehicle.updateRegistrationFee();
         v1.displayVehicleDetails();
-
     }
 }

@@ -1,7 +1,6 @@
 package Level1_17_01_26;
 
 class Student {
-
     int rollNumber;
     String name;
     double cgpa;
@@ -24,7 +23,6 @@ class Student {
 }
 
 class PostgraduateStudent extends Student {
-
     String specialization;
 
     PostgraduateStudent(int rollNumber, String name, double cgpa, String specialization) {
@@ -41,16 +39,12 @@ class PostgraduateStudent extends Student {
 }
 
 public class UniversityManagementSystem {
-
     public static void main(String[] args) {
-
         PostgraduateStudent student =
-                new PostgraduateStudent(101, "Rahul Sharma", 8.5, "Computer Science");
-
+                new PostgraduateStudent(103, "Vishal Kumar", 7.5, "MBA");
         student.displayDetails();
 
         student.setCGPA(9.0);
-
         System.out.println(student.getCGPA());
     }
 }

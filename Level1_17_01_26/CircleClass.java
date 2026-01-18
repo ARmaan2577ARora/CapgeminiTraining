@@ -1,11 +1,9 @@
 package Level1_17_01_26;
-
 class Circle{
     int radius;
 
     Circle(){
-        this(1);
-       // System.out.println("Default Constructor");
+        this(1);  // Default Constructor
     }
 
     Circle(int r){
@@ -20,6 +18,5 @@ public class CircleClass {
 
         System.out.println(c1.radius);
         System.out.println(c2.radius);
-
     }
 }

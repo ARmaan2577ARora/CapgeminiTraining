@@ -12,22 +12,19 @@ class BookC{
         this.price = price;
         this.availability = availability;
     }
-
-        void borrow() {
-            if (availability) {
-                System.out.println("Book issued successfully!");
-                availability = false;
-            } else {
-                System.out.println("Sorry, the book is not available.");
-            }
+    void borrow() {
+        if (availability) {
+            System.out.println("Book issued successfully!");
+            availability = false;
+        } else {
+            System.out.println("Sorry, the book is not available.");
         }
+    }
 }
 public class LibraryBookSystem {
     public static void main(String[] args) {
-        BookC b1 = new BookC("Java Basics", "John Doe", 500, true);
-
+        BookC b1 = new BookC("Java Basic", "John", 650, true);
         b1.borrow();
-
         b1.borrow();
     }
 }

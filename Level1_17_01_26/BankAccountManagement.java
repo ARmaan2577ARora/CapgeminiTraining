@@ -1,5 +1,7 @@
 package Level1_17_01_26;
+
 class BankAccount {
+
     public int accountNumber;
     protected String accountHolder;
     private double balance;
@@ -22,6 +24,7 @@ class BankAccount {
 }
 
 class SavingsAccount extends BankAccount {
+
     double interestRate;
 
     SavingsAccount(int accountNumber, String accountHolder, double balance, double interestRate) {
@@ -42,11 +45,11 @@ public class BankAccountManagement {
     public static void main(String[] args) {
 
         SavingsAccount account =
-                new SavingsAccount(123456, "Amit Kumar", 5000.0, 4.5);
+                new SavingsAccount(125436, "Amit Tandon", 5500.0, 5.5);
 
         account.displayDetails();
 
-        account.setBalance(7500.0);
+        account.setBalance(7600.0);
 
         System.out.println(account.getBalance());
     }

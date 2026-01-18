@@ -13,7 +13,6 @@ class HotelBooking{
         this.guestName =name;
         this.roomType = type;
         this.nights = nights;
-
     }
 
     HotelBooking(HotelBooking h2){
@@ -21,7 +20,6 @@ class HotelBooking{
         this.roomType = h2.roomType;
         this.nights = h2.nights;
     }
-
 }
 public class HotelBookingSystem {
     public static void main(String[] args) {
@@ -31,7 +29,6 @@ public class HotelBookingSystem {
 
         System.out.println(h2.guestName+" "+h2.roomType+" "+h2.nights);
         System.out.println(h3.guestName+" " +h3.roomType+" "+h3.nights);
-
     }
 }
 

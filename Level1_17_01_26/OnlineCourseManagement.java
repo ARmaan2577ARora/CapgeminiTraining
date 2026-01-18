@@ -5,7 +5,7 @@ class Course{
     int  duration;
     double fee;
 
-    static String  instituteName = "Chitkara";
+    static String  instituteName = "Chitkara University";
 
     Course(String name,int duration,int fee){
         this.courseName = name;
@@ -17,21 +17,18 @@ class Course{
         System.out.println(duration);
         System.out.println(fee);
         System.out.println(instituteName);
-
     }
     static void updateInstituteName(){
-        Course.instituteName = "LPU";
+        Course.instituteName = "Thapar";
     }
 }
 public class OnlineCourseManagement {
     public static void main(String[] args) {
-        Course c1 = new Course("Btech",4,85000);
-     //   Course c2 = new Course("B.com",3,25000);
-
+        Course c1 = new Course("B.com",4,75000);
+     //   Course c2 = new Course("Btech",3,35000);
         c1.displayCourseDetails();
         Course.updateInstituteName();
         c1.displayCourseDetails();
-
 
     }
 }
