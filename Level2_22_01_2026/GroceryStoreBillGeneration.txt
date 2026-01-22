@@ -1,0 +1,69 @@
+Class Diagram
+
++----------------+
+|   Customer     |
++----------------+
+| - name         |
+| - customerId   |
++----------------+
+        ◆
+        |
+        | Composition
+        |
++----------------+
+|   Product      |
++----------------+
+| - productName  |
+| - quantity     |
+| - price        |
++----------------+
+
++----------------------+
+|   BillGenerator      |
++----------------------+
+| + calculateTotal()   |
++----------------------+
+        |
+        | uses
+        |
+     Customer
+
+------------------------------------------------------------------
+
+Object Diagram
+
+customer1 : Customer
+--------------------
+name = "Alice"
+
+product1 : Product
+-------------------
+productName = "Apples"
+quantity = 2 kg
+price = $3/kg
+
+product2 : Product
+-------------------
+productName = "Milk"
+quantity = 1 litre
+price = $2/litre
+
+customer1 ◆--- product1
+customer1 ◆--- product2
+
+
+--------------------------------------------------------------------------
+
+Sequence DIagram
+
+Customer        BillGenerator        Product
+   |                  |                |
+   | requestBill()    |                |
+   |----------------->|                |
+   |                  | getPrice()     |
+   |                  |--------------->|
+   |                  | getPrice()     |
+   |                  |--------------->|
+   |                  | calculateTotal()|
+   |<-----------------|                |
+   | displayBill()    |                |
