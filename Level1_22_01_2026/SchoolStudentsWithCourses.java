@@ -47,7 +47,7 @@ class Student{
 }
 class SchoolStudentsWithCourses {
     public static void main(String[] args) {
-        School s = new School("Capgemini");
+        School s = new School("GeeksForGeeks");
         Course c1 = new Course("Java");
         Course c2 = new Course("Python");
         Student s1 = new Student("Ram", 1);

@@ -52,7 +52,7 @@ class Department{
 }
 class UniversityWithFacultiesAndDepartments {
     public static void main(String[] args) {
-        University u = new University("Capgemini");
+        University u = new University("GeeksForGeeks");
         Department d = new Department("IT");
         Faculty f = new Faculty("Ram",1);
         u.addDepartment("IT");
