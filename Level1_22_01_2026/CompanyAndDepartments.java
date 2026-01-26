@@ -35,7 +35,7 @@ class Employee{
 }
 class CompanyAndDepartments{
     public static void main(String[] args) {
-        Company c = new Company("Capgemini");
+        Company c = new Company("GeeksForGeeks");
         c.addDepartment("IT");
         c.departments.get(0).addEmployee("Ram",1);
         System.out.println(c.departments.get(0).employees.get(0).name);
