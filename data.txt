@@ -1,0 +1,2 @@
+This is data.txt content.
+Line 2 of data.txt.

@@ -1,0 +1,3 @@
+Hello, this is a sample file for testing Java try-with-resources.
+Exception handling is important!
+Goodbye.

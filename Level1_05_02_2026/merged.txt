@@ -1,0 +1,7 @@
+--- Content from File 1 ---
+File 1 Content Line 1
+File 1 Content Line 2
+
+--- Content from File 2 ---
+File 2 Content Line A
+File 2 Content Line B
