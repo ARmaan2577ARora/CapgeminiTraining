@@ -1,0 +1,4 @@
+This is a sample file.
+Line 2 with some text.
+Line 3 with an error.
+Line 4 with more text.
